@@ -1,0 +1,35 @@
+{% extends "auctions/layout.html" %}
+
+{% block body %}
+  <h2 class="body-title">Active Listings</h2>
+  
+  <div class="all-items">
+    {% for listing in listings %}
+    {% if listing.is_active %}
+      <div class="item">
+        <div class="item-image-container">
+          <a class="item-image-link" href="{% url 'item' listing.id %}">
+            <img src="{{ listing.img_url }}" alt="{{ listing.title }}-image">
+          </a>             
+        </div>
+        <div class="item-info">
+          <h3 class="item-title">{{ listing.title }}</h3>
+          <h5 class="item-description">{{ listing.description }}</h5>
+          {% if listing.starting_bid > listing.highest_bid %}
+            <h4 class="item-price">Price: ${{ listing.starting_bid }}</h4>
+          {% else %}
+            <h4 class="item-price">Price: ${{ listing.highest_bid }}</h4>
+          {% endif %}
+          <!-- # TODO - Format Datetime Field -->
+          <p class="item-date">Created Mar 26, 2022</p>
+        </div>
+      </div>
+    {% endif %}
+   
+  {% empty %}
+    <span>Currently there aren't any active listings.</span>
+  {% endfor %}
+  </div>
+  
+    
+{% endblock %}

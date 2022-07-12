@@ -1,0 +1,221 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    color: rgb(67, 67, 70);
+    background-color: rgb(234, 241, 234);
+    font-size: 1.8rem;
+    font-family: 'Raleway', 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    padding: 6rem 10rem;
+}
+
+/* Headings */
+h1 {
+    font-size: 4.6rem;
+    font-weight: 800;
+}
+
+h2 {
+    font-size: 3.6rem;
+    font-weight: 600;
+}
+
+h3 {
+    font-size: 2.4rem;
+    font-weight: 400;
+}
+
+h4 {
+    font-size: 1.6rem;
+    font-weight: 200;
+}
+
+/* All unordered lists */
+ul {
+    list-style-type: none;
+}
+
+li {
+    padding: 1rem;
+}
+
+/* All links */
+a {
+    color: rgb(12, 99, 12);
+    text-decoration: none;
+}
+
+/* Navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar-nav {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.nav-item {
+    /* margin: 0.5rem 1rem; */
+    margin-left: 1.5rem;
+    /* padding: 1rem; */
+}
+
+.login-status {
+    font-size: 1.4rem;
+    font-weight: 600;
+    text-align: end;
+    padding-right: 1rem;
+}
+
+hr {
+    margin: 0.5rem 1rem 3rem 0;
+}
+
+/* Title of each page */
+.body-title {
+    margin-bottom: 3rem;
+}
+
+/* Forms */
+.form-group {
+    margin-bottom: 1.5rem;
+}
+
+.form-control {
+    border: 1px solid rgb(12, 99, 12);
+    border-radius: 0.3rem;
+    padding: 0.6rem;
+}
+
+/* Buttons */
+.btn {
+    border: 1px solid rgb(12, 99, 12);
+    border-radius: 0.3rem;
+    margin-bottom: 1rem;
+    padding: 0.6rem 4rem;
+}
+
+.btn:hover {
+    color: white;
+    background-color:rgb(12, 99, 12);
+}
+
+/* Index/Home */
+.all-items {
+    display: flex;
+    flex-flow: row wrap;
+    gap: 3rem;
+}
+
+.item {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 3rem;
+
+    border: 2px solid rgb(216, 219, 216);
+    padding: 2rem 2rem;
+
+    max-width: 80rem;
+    width: 51rem;
+}
+
+.item-image-container {
+    border: 1px solid rgb(216, 219, 216);
+    
+    height: auto;
+    width: 100%;
+}
+
+.item-image-link img {
+    max-height: auto;
+    max-width: 100%;
+}
+
+.item-info {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+    height: auto;
+    width: 100%;
+    flex: 1 0 auto;
+
+    border: 1px solid rgb(216, 219, 216);
+    padding: 1rem;
+}
+
+.item-title, .item-description, .item-price, .item-date {
+    padding: 1rem;
+}
+
+.item-title {
+    font-weight: 600;
+}
+
+.item-description {
+    font-weight: 400;
+}
+
+.item-price {
+    font-weight: 700;
+    font-size: 2rem;
+}
+
+.item-date {
+    font-size: 1.2rem;
+    font-weight: 300;
+}
+
+/* Item Page */
+.btn-wrap {
+    display: flex;
+    justify-content: center;
+}
+
+.submit-btn {
+    margin-top: 1rem;
+}
+
+
+/* Categories */
+
+/* Watchlist */
+/* .watchlist-list li {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 1rem 0 0 4rem;
+}
+
+.watchlist-item {
+    margin: 0 1rem;
+}
+
+.remove-badge-wrap {
+    color: rgb(233, 225, 225);
+    margin: ;
+    text-decoration: none; 
+}
+
+.remove-badge-wrap:hover {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+}
+
+.remove-badge {
+    height: 2.1rem;
+    margin-bottom: 0.4rem;
+} */
+

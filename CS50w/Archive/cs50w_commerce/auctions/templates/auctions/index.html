@@ -1,0 +1,18 @@
+{% extends "auctions/layout.html" %}
+
+{% block body %}
+    <h2>Active Listings</h2>
+    {% for listing in listings %}
+    <div class="container-fluid card">    
+        {% comment %}<img src="#" class="card-img-top">{% endcomment %}
+        <div class="card-body">
+            <h5 class="card-title">{{ listing.title }}<h5>
+            <p class="card-text">
+                {{ listing.description }}
+                {{ listing.start_bid }}
+                {{ listing.image_url }}
+            </p>
+        </div>
+    </div>
+    {% endfor %}
+{% endblock %}

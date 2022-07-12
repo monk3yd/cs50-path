@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+            integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
+        <!-- Local CSS -->
+        <link rel="stylesheet" href="styles.css">
+
+        <!-- TITLE. Important for web search -->
+        <title>Advanced Search</title>
+    </head>
+
+    <body>
+        <nav>
+            <ul>
+                <li><a href="index.html">Back to Google Search</a></li>
+            </ul>
+        </nav>
+
+        <main>
+            <form action="https://google.com/search">
+                <div class="input-container">
+                    <div id="advanced-bar-container" class="bar-container">
+                        <div class="line">
+                            <label for="all-words">all these words:</label>
+                            <input id="all-words" class="advanced-bar" type="text" name="as_q">
+                        </div>
+                        <div class="line">
+                            <label for="exact-word">this exact word or phrase:</label>
+                            <input id=" exact-word" class="advanced-bar" type="text" name="as_epq">
+                        </div>
+                        <div class="line">
+                            <label for="any-word">any of these words:</label>
+                            <input id="any-word" class="advanced-bar" type="text" name="as_oq">
+                        </div>
+                        <div class="line">
+                            <label for="none-word">none of these words:</label>
+                            <input id="none-word" class="advanced-bar" type="text" name="as_eq">
+                        </div>
+                    </div>
+                    <div class="advanced-btn-container">
+                        <input class="botton advanced" type="submit" value="Advanced Search">
+                    </div>
+                </div>
+            </form>
+        </main>
+    </body>
+
+</html>

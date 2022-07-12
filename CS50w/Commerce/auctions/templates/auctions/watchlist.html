@@ -1,0 +1,27 @@
+{% extends 'auctions/layout.html' %}
+
+{% block title %}
+    My Watchlist
+{% endblock %}
+
+{% block body %}
+{% if user.is_authenticated %}
+    <h2 class="body-title">My Watchlist</h2>
+    <ul class="watchlist-list">
+        {% for item in watchlist %}
+        <li>
+            <a class="watchlist-item" href="{% url 'item' item.item_id %}">
+                {{ item }}
+            </a>
+            <a class="remove-badge-wrap" href="{% url 'remove' item.item_id %}">
+                <span class="remove-badge badge bg-danger"> remove</span>
+            </a>
+            <!-- # https://stackoverflow.com/questions/13092268/how-do-you-join-two-tables-on-a-foreign-key-field-using-django-orm -->
+            <!-- {{ element.item.title}}   -->
+        </li>
+        {% empty %}
+            <span>There are no items in watchlist.</span>
+        {% endfor %}
+    </ul>
+{% endif %}
+{% endblock %}

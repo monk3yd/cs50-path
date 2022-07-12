@@ -1,0 +1,15 @@
+{% extends "encyclopedia/layout.html" %}
+
+{% block title %}
+    Search Encyclopedia
+{% endblock %}
+
+{% block body %}
+    <h1>There is not an exact match for your query!</h1>
+    <h3>Maybe you are looking for some of this existing entries:</h3>
+    <ul>
+        {% for entry in entries %}
+        <li><a href="{% url 'title' entry %}">{{ entry }}</a></li>
+        {% endfor %}
+    </ul>
+{% endblock %}
