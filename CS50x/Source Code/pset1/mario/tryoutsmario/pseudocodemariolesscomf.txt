@@ -1,0 +1,7 @@
+Prompt user for height
+
+if height es less than 1 or greater than 8 (or not an integer at all). go back to step 1
+
+iterate (for) from 1 to height:
+    on iteration i, printf("i * #") and then a \n
+    

@@ -1,0 +1,31 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Index
+{% endblock %}
+
+{% block main %}
+<h1>Portfolio</h1>
+<h2>Cash Balance: {{ cash[0]["cash"] }}</h2>
+<table class="table">
+ <thead>
+     <th scope="col">Own stocks</th>
+     <th scope="col">Symbol</th>
+     <th scope="col">N° of Shares</th>
+     <th scope="col">Actual Price</th>
+     <th scope="col">Total Value</th>
+ </thead>
+ <tbody>
+     {% for data in dataBase %}
+     <tr>
+         <td>{{ data["name"] }}</td>
+         <td>{{ data["symbol"] }}</td>
+         <td>{{ data["SUM(qty)"] }}</td>
+         <td>{{ data["price"] }}</td>
+         <td>{{ data["totalValue"] }}</td>
+     </tr>
+     {% endfor %}
+ </tbody>
+ </table>
+ <h2>Grand Total: {{ cash[0]["cash"] + totalCounter }}</h2>
+{% endblock %}

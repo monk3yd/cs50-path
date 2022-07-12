@@ -1,0 +1,71 @@
+AAGGTAAGTTTAGAATATAAAAGGTGAGTTAAATAGAATAGGTTAAAATTAAAGGAGATCAGATCAGATCAGATCTATCTATCTATCTATCTATCAGAAAAGAGTAAATAGTTAAAGAGTAAGATATTGAATTAATGGAAAATATTGTTGGGGAAAGGAGGGATAGAAGG
+0123456789
+
+
+
+for STR in STRS:
+    while i < len(dna):
+        if STR == dna[i:i + len(STR)]:
+            a += 1
+            i += len(STR)
+            if a > max_a:
+                max_a = a
+        elif STR == dna[i:i + len(STR)]:
+            b += 1
+            i += len(STR)
+            if b > max_b:
+                max_b = b
+        elif STR == dna[i:i + len(STR)]:
+            c += 1
+            i += len(STR)
+            if c > max_c:
+                max_c = c
+        else:
+            i += 1
+
+
+
+
+while i < len(dna):
+    if STR[0] == dna[i:i + len(STR[0])]:
+        a += 1
+        i += len(STR[0])
+        if a > max_a:
+            max_a = a
+    elif STR[1] == dna[i:i + len(STR[1])]:
+        b += 1
+        i += len(STR[1])
+        if b > max_b:
+            max_b = b
+    elif STR[2] == dna[i:i + len(STR[2])]:
+        c += 1
+        i += len(STR[2])
+        if c > max_c:
+            max_c = c
+    elif STR[3] == dna[i:i + len(STR[3])]:
+        d += 1
+        i += len(STR[3])
+        if d > max_d:
+            max_d = d
+    elif STR[4] == dna[i:i + len(STR[4])]:
+        e += 1
+        i += len(STR[4])
+        if e > max_e:
+            max_e = e
+    elif STR[5] == dna[i:i + len(STR[5])]:
+        f += 1
+        i += len(STR[5])
+        if f > max_f:
+            max_f = f 
+    elif STR[6] == dna[i:i + len(STR[6])]:
+        g += 1
+        i += len(STR[6])
+        if g > max_g:
+            max_g = g
+    elif STR[7] == dna[i:i + len(STR[7])]:
+        h += 1
+        i += len(STR[7])
+        if h > max_h:
+            max_h = h
+    else:
+        i += 1

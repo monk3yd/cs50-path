@@ -1,0 +1,235 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html
+{
+    font-size: 62.5%;
+    min-height: 100vh;
+}
+
+
+/* BODY */
+
+body
+{
+    font-family: 'Raleway', sans-serif;
+    height: 90vh;
+    background: radial-gradient(rgba(0, 0, 0, 0.2),transparent),url('./adrien-tutin-sovz0DK5ynI-unsplash.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+/* NAVBAR */
+
+nav
+{
+    min-height: 10vh;
+    border-bottom: 1px thin whitesmoke;
+}
+
+.navbar-brand h1
+{
+    font-size: 2.6rem;
+    border-bottom: 2px solid whitesmoke;
+    padding-bottom: 1px;
+    margin-right: 17rem;
+}
+
+.nav-logo
+{
+    color: whitesmoke;
+}
+
+.container-fluid
+{
+    font-size: 1.8rem;
+    margin: 0.8rem 2.5rem;
+
+}
+
+.container-fluid, footer
+{
+    font-family: 'Montserrat', sans-serif;
+    font-variant: small-caps;
+}
+
+.navbar-nav
+{
+    width: 90rem;
+}
+
+
+.dropdown
+{
+    margin-right: 2rem;
+}
+
+.nav-item h2
+{
+    color: whitesmoke;
+    font-size: 2rem;
+    font-weight: 500;
+}
+
+
+/* MAIN */
+
+main
+{
+    height: 90vh;
+    color: whitesmoke;
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+.main-container
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+}
+
+.intro-container
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 10rem;
+    width: 60rem;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 5px;
+}
+
+.intro-container h3
+{
+    text-align: center;
+    font-weight: 800;
+    padding: 2rem;
+}
+
+.link-container
+{
+    position: fixed;
+    right: 0rem;
+    display: flex;
+    height: 40rem;
+    width: auto;
+    background: rgba(255, 255, 255, 0.6);
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    opacity: 0;
+    transition: opacity 2s;
+    
+}
+
+.link-list
+{
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+    justify-content: space-around;
+    margin-right: 1.5rem;
+    margin-top: 1rem;	
+}
+
+.link-list li
+{
+    margin: 0.1rem;
+    padding: 0.1rem;
+}
+
+/* FOOTER */
+
+footer
+{
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 10vh;
+    width: 100vw;
+    color: whitesmoke;
+    background-color: rgba(0, 0, 0, 0.5);
+    height: 10vh;
+}
+
+.sign h4
+{
+    font-size: 1.2rem;
+    text-align: center;
+    padding: 1rem;
+}
+
+
+/* CARDS */
+
+.card-body
+{
+    color: black;
+}
+
+.card-text
+{
+
+}
+
+.abogado,.abogada
+{
+    height: 60rem;
+    width: auto;
+}
+
+/* FORM */
+@media screen and (max-width: 576px)
+{
+    .form-container
+    {
+        font-size: ;
+    }
+    
+    .navbar-brand h1
+    {
+        font-size: 1.9rem;
+    }
+
+    form div label
+    {
+        font-size: 1.3rem;
+    }
+
+        .container-fluid
+    {
+        font-size: 1.4rem;
+        margin: 0.8rem 2.5rem;
+    }
+    .nav-item h2
+    {
+        font-size: 1.4rem;
+        margin-top: 0.7rem;
+    }
+}
+
+
+label
+{
+    font-size: 1.8rem;
+}
+
+
+/* NEWS */ 
+
+.carousel-item p
+{
+    text-align: center;
+    font-size: 1.4rem;
+}
+
+/* font-family: 'Montserrat', sans-serif;     /* font-family: 'Raleway', sans-serif; */

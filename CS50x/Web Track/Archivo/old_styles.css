@@ -1,0 +1,58 @@
+/* Navbar Elements*/
+
+.navbar
+{
+    font-family: 'Montserrat', sans-serif;
+    font-variant: small-caps;
+    padding: 7px;
+}
+
+.navbar-brand
+{
+    margin-left: 2%;
+    margin-right: 7%;
+    font-size: 18pt; 
+}
+
+.nav-link
+{
+    margin: 0px 35px 0px;
+    font-size: 14pt;
+    font-weight: 500;
+}
+
+/* Body Elements */
+
+body
+{
+    font-family: 'Raleway', sans-serif;
+    color: rgb(238, 238, 238);
+    background-color: rgb(27, 27, 27);
+}
+
+h1
+{
+    font-variant: small-caps;
+    text-align: center;
+    padding-top: 15px;
+    text-shadow: rgb(157, 157, 157) 1px 1px;
+    letter-spacing: 2px;
+}
+
+p
+{
+    text-align: center;
+    width: 34%;
+    margin-left: 33%;
+    border: 3px solid white;
+    padding: 10px;
+}
+
+#foot
+{
+    text-align: center;
+    font-variant: small-caps;
+    margin-left: 33%;
+    margin-right: 33%;
+}
+
