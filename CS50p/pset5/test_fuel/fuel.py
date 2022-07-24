@@ -3,7 +3,8 @@ import sys
 
 def main():
     while True:
-        percentage = convert(input("Fraction: "))
+        fraction = input("Fraction: ")
+        percentage = convert(fraction)
         if percentage > 100 or percentage < 0:
             continue
         break
@@ -29,14 +30,17 @@ def convert(fraction):
 
 
 def gauge(percentage):
-    if 100 >= percentage >= 99:
-        fuel = "F"
-        return f"{fuel}"
-    elif 1 >= percentage >= 0:
-        fuel = "E"
-        return f"{fuel}"
-    else:
-        return f"{percentage}%"
+    try:
+        if 100 >= percentage >= 99:
+            fuel = "F"
+            return f"{fuel}"
+        elif 1 >= percentage >= 0:
+            fuel = "E"
+            return f"{fuel}"
+        else:
+            return f"{percentage}%"
+    except ValueError as error:
+        raise error
 
 
 if __name__ == "__main__":

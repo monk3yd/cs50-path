@@ -13,7 +13,7 @@ def test_value_error():
     with pytest.raises(ValueError):
         convert("cat")
         convert("cat/4")
-        convert(True)
+        convert("True")
 
 
 def test_zero_division_error():
@@ -27,3 +27,4 @@ def test_gauge():
     assert gauge(99) == "F"
     assert gauge(40) == "40%"
     assert gauge(80) == "80%"
+
