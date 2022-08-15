@@ -10,7 +10,7 @@ def test_init():
 def test_str():
     jar = Jar()
     jar.deposit(3)
-    assert str(jar) == "3"
+    assert str(jar) == "🍪🍪🍪"
 
 
 def test_deposit():

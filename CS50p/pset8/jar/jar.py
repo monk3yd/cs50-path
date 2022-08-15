@@ -4,7 +4,10 @@ class Jar:
         self.cookies = 0
 
     def __str__(self):
-        return str(self.cookies)
+        all_cookies = ""
+        for _ in range(self.cookies):
+            all_cookies += "🍪"
+        return str(all_cookies)
 
     def deposit(self, n):
         self.cookies += n
@@ -33,7 +36,3 @@ class Jar:
     @property
     def size(self):
         return self.cookies
-
-    # Setter
-    # @size.setter
-    # def size(self, size):
